@@ -1,0 +1,10 @@
+============================
+id: <#= data.id.ToString("000") #>
+message: <#= data.message.ToUpper() #>
+date: <#= data.date #>
+<# if(data.id % 2 == 0) { #>
+* id is even.
+<# } else { #>
+* id is odd.
+<# } #>
+============================
